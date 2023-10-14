@@ -1,0 +1,111 @@
+/* global style */
+body
+{
+background: #fc00ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* End global style */
+
+/* start the cal style */
+    .container
+    {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .calculator{
+        background-color: #ffffffa0;
+        padding: 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.calculator form input
+{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background-color: transparent;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+    margin: 10px;
+}
+/* end the cal style */
+
+/* form */
+form .display
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input 
+{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+.equal
+{
+    width: 145px !important;
+
+}
+form .operator
+{
+    color:darkred !important;
+}
+/* end form */
+
+/* dark mood */
+.switch
+{
+    position: absolute;
+    left: 50%;
+    font-size: 26px;
+    top: 15px;
+    cursor: pointer;
+}
+.dark
+{
+    background-color: #000;
+    color: #ffffff !important;
+}
+
